@@ -10,11 +10,11 @@
    --primary-color: #ff4294;
    --secondary-color: #f0ffbd;
    --tertiary-color: #607818;
+   --fourth-color: #ff8fbf;
 }
 
 header {
    padding: 20px 35px;
-   background: var(--primary-color);
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
@@ -59,6 +59,16 @@ header nav ul li a:hover {
    background: #fff;
    color: var(--primary-color);
    border-radius: 20px;
+}
+
+footer {
+    background: var(--fourth-color);
+    color: #fff;
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .hero {
@@ -107,7 +117,7 @@ section {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
-   width: 100%;
+   width: 95%;
 }
 
 .project-title {
@@ -123,7 +133,7 @@ section {
    opacity: 85%;
 }
 
-.project-1 img {
+.project-1 img { 
    width: 500px;
    height: 500px;
 }
@@ -131,4 +141,75 @@ section {
 .project-tiles img:hover {
    border-radius: 20%;
    opacity: 100%;
+}
+
+/* contact section */
+
+.contact {
+   background: rgba(255, 66, 148, 0.15);
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
+}
+
+.contact-info img {
+   border-radius: 20%;
+}
+
+.contact-info div {
+    color: var(--fourth-color);
+}
+
+.contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.contact-info a {
+    color: var(--primary-color);
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid var(--secondary-color);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.75);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255,255,255,1);
+    outline: none;
+}
+
+
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.contact-form button:hover {
+    color: var(--primary-color);
+    background: var(--secondary-color);
 }
