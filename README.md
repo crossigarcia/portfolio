@@ -12,7 +12,7 @@
 * Page has a responsive layout that adapts to user's viewport.
 
 ## Solution
-* Used HTML anchor elements to for navigation and application links
+* Used HTML anchor elements for navigation and application links
 * Used media queries to add mobile responsiveness
 * Used flexbox to layout the different sections 
 
