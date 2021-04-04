@@ -114,33 +114,54 @@ section {
 /* projects section */
 
 .project-tiles {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   width: 95%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.project-title {
-   color: var(--tertiary-color);
+.project {
+    margin: 10px;
+    background: rgba(255, 66, 148, 0.15);
+    flex: 1;
+}
+
+.project-1 {
+    margin: 10px;
+    background: rgba(255, 66, 148, 0.15);
+    flex: 1.2;
+}
+
+.project-1 img, .project img {
+   opacity: 100%;
+   width: 100%;
+}
+
+.project-info h3 {
+   color: var(--primary-color);
    text-align: center;
    font-size: 20px;
-   margin-top: 15px;
+   padding: 10px;
 }
 
-.project-tiles img {
-   width: 300px;
-   height: 300px;
+.project-info p {
+    line-height: 1.2;
+    color: var(--tertiary-color);
+    width: 85%;
+    font-size: 15px;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.project-1 img:hover, .project img:hover {
+   border-radius: 20%;
    opacity: 85%;
 }
 
-.project-1 img { 
-   width: 450px;
-   height: 450px;
-}
-
-.project-tiles img:hover {
-   border-radius: 20%;
-   opacity: 100%;
+.project-1:hover, .project:hover {
+    border-radius: 20%;
+    border: 2px solid var(--secondary-color);
 }
 
 /* contact section */
@@ -214,6 +235,10 @@ section {
     background: var(--secondary-color);
 }
 
+.flex-row {
+    display: flex;
+}
+
 /* media query for smaller desktop screens and smaller */
 @media screen and (max-width: 980px) {
     header {
@@ -242,18 +267,12 @@ section {
         width: 80%;
     }
 
-    .project-title {
-       margin: 5px 0 30px 0;
+    .project h3 {
+      font-size: 18px;
     }
 
-   .project-tiles {
-      flex: 0 100%;
-      justify-content: space-evenly;
-    }
-
-    .project-1 img {
-       width: 370px;
-       height: 370px;
+    .project-1 {
+        flex: 0 100%;
     }
 
     .contact-info {
@@ -281,6 +300,15 @@ section {
 
     .bio p {
         width: 100%;
+    }
+
+    .project-tiles {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact img {
+        width: 95%;
     }
 
 }
